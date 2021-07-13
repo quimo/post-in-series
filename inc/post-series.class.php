@@ -6,12 +6,10 @@ class PostSeries {
 
     public static function instance() {
         
-        
         if (!function_exists('get_field')) {
             //TODO: mostrare un messaggio di errore
             return false;
         }
-        
 
         if (is_null(self::$_instance)) {
             self::$_instance = new self();
